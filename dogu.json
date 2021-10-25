@@ -1,0 +1,22 @@
+{
+  "Name": "testing/gotenberg",
+  "Version": "7.1.0-1",
+  "DisplayName": "Gotenberg",
+  "Description": "A Docker-powered stateless API for PDF files.",
+  "Url": "https://gotenberg.dev/",
+  "Category": "Documentation",
+  "Tags": [
+    "documentation",
+    "pdf",
+    "office",
+    "convert"
+  ],
+  "Logo": "https://gotenberg.dev/img/logo_jed.png",
+  "Image": "registry.cloudogu.com/testing/gotenberg",
+  "HealthChecks": [
+    {
+      "Type": "tcp",
+      "Port": 3000
+    }
+  ]
+}
