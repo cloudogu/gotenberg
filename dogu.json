@@ -13,6 +13,14 @@
   ],
   "Logo": "https://gotenberg.dev/img/logo_jed.png",
   "Image": "registry.cloudogu.com/testing/gotenberg",
+  "volumes": [
+    {
+      "Name": "fonts",
+      "Path": "/home/gotenberg/.fonts",
+      "Owner": "1000",
+      "Group": "1000"
+    }
+  ],
   "HealthChecks": [
     {
       "Type": "tcp",
