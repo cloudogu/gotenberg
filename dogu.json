@@ -1,5 +1,5 @@
 {
-  "Name": "testing/gotenberg",
+  "Name": "official/gotenberg",
   "Version": "7.1.0-1",
   "DisplayName": "Gotenberg",
   "Description": "A Docker-powered stateless API for PDF files.",
@@ -12,7 +12,7 @@
     "convert"
   ],
   "Logo": "https://gotenberg.dev/img/logo_jed.png",
-  "Image": "registry.cloudogu.com/testing/gotenberg",
+  "Image": "registry.cloudogu.com/official/gotenberg",
   "volumes": [
     {
       "Name": "fonts",
