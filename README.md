@@ -17,10 +17,12 @@
 
 ## Installation Ecosystem
 ```
-cesapp install testing/gotenberg
+cesapp install official/gotenberg
 
 cesapp start gotenberg
 ```
+
+Additional fonts in ttf format can be added in the "fonts" volume of gotenberg: `/var/lib/ces/gotenberg/volumes/fonts/`.
 
 ---
 ### What is the Cloudogu EcoSystem?
