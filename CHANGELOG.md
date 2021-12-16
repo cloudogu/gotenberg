@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Changed
-- Improve dogu to fulfill `Definition of Done`
+- Improve dogu to fulfill `Definition of Done` ([#2](https://github.com/cloudogu/gotenberg/pull/2))
 
 ## [7.1.0-1]
 ### Added
