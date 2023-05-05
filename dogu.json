@@ -1,6 +1,6 @@
 {
   "Name": "official/gotenberg",
-  "Version": "7.8.2-1",
+  "Version": "7.8.2-2",
   "DisplayName": "Gotenberg",
   "Description": "A Docker-powered stateless API for PDF files.",
   "Url": "https://gotenberg.dev/",
@@ -29,7 +29,12 @@
       "Default": "info",
       "Validation": {
         "Type": "ONE_OF",
-        "Values": ["warn", "error", "info", "debug"]
+        "Values": [
+          "warn",
+          "error",
+          "info",
+          "debug"
+        ]
       }
     }
   ],
