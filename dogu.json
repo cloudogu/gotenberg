@@ -1,10 +1,43 @@
 {
-  "Name": "testing/gotenberg",
-  "Version": "7.1.0-1",
+  "Name": "official/gotenberg",
+  "Version": "7.8.2-2",
   "DisplayName": "Gotenberg",
   "Description": "A Docker-powered stateless API for PDF files.",
   "Url": "https://gotenberg.dev/",
   "Category": "Documentation",
+  "Configuration": [
+    {
+      "Name": "container_config/memory_limit",
+      "Description": "Limits the container's memory usage. Use a positive integer value followed by one of these units [b,k,m,g] (byte, kibibyte, mebibyte, gibibyte).",
+      "Optional": true,
+      "Validation": {
+        "Type": "BINARY_MEASUREMENT"
+      }
+    },
+    {
+      "Name": "container_config/swap_limit",
+      "Description": "Limits the container's swap memory usage. Use zero or a positive integer value followed by one of these units [b,k,m,g] (byte, kibibyte, mebibyte, gibibyte). 0 will disable swapping.",
+      "Optional": true,
+      "Validation": {
+        "Type": "BINARY_MEASUREMENT"
+      }
+    },
+    {
+      "Name": "logging/root",
+      "Description": "Set the root log level to one of ERROR, WARN, INFO or DEBUG. Default is INFO",
+      "Optional": true,
+      "Default": "info",
+      "Validation": {
+        "Type": "ONE_OF",
+        "Values": [
+          "warn",
+          "error",
+          "info",
+          "debug"
+        ]
+      }
+    }
+  ],
   "Tags": [
     "documentation",
     "pdf",
@@ -12,7 +45,16 @@
     "convert"
   ],
   "Logo": "https://gotenberg.dev/img/logo_jed.png",
-  "Image": "registry.cloudogu.com/testing/gotenberg",
+  "Image": "registry.cloudogu.com/official/gotenberg",
+  "volumes": [
+    {
+      "Name": "fonts",
+      "Path": "/home/gotenberg/.fonts",
+      "Owner": "1000",
+      "Group": "1000",
+      "NeedsBackup": true
+    }
+  ],
   "HealthChecks": [
     {
       "Type": "tcp",
