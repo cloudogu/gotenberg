@@ -11,7 +11,7 @@ COPY packages/doguctl-$DOGUCTL_VERSION.tar.gz /packages
 RUN sha256sum "/packages/doguctl-${DOGUCTL_VERSION}.tar.gz"
 RUN set +x && echo "4c38d308c2fe3f8eb2b44c075af7038c2"
 
-FROM gotenberg/gotenberg:7.8.3
+FROM gotenberg/gotenberg:7.9.2
 
 USER root
 RUN apt-get -y update && apt-get -y dist-upgrade && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
