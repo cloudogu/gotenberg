@@ -21,7 +21,7 @@ ARG doguctl_version
 ENV DOGUCTL_VERSION=$doguctl_version
 
 LABEL NAME="official/gotenberg" \
-      VERSION="7.9.2-1" \
+      VERSION="7.9.2-2" \
       maintainer="SCM Team <scm-team@cloudogu.com>"
 
 COPY resources /
