@@ -1,7 +1,4 @@
-<img src="https://gotenberg.dev/img/logo_jed.png" alt="gotenberg logo" height="150px">
-
-
-[![GitHub license](https://img.shields.io/github/license/cloudogu/scm.svg)](https://github.com/cloudogu/gotenberg/blob/develop/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/cloudogu/gotenberg.svg)](https://github.com/cloudogu/gotenberg/blob/develop/LICENSE)
 
 # Gotenberg Dogu
 
