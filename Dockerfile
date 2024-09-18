@@ -9,7 +9,7 @@ RUN apt-get -y update && apt-get -y dist-upgrade && rm -rf /var/lib/apt/lists/* 
 USER gotenberg
 
 LABEL NAME="official/gotenberg" \
-      VERSION="8.8.0-1" \
+      VERSION="8.8.0-3" \
       maintainer="SCM Team <scm-team@cloudogu.com>"
 
 COPY resources /
