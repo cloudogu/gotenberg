@@ -1,9 +1,9 @@
-apiVersion: k8s.cloudogu.com/v2
+apiVersion: k8s.cloudogu.com/v1
 kind: Dogu
 metadata:
   name: NAME
   labels:
-    app: ces
+    dogu: NAME
 spec:
   name: NAMESPACE/NAME
   version: VERSION
