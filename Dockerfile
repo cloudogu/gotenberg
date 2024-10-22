@@ -2,14 +2,14 @@
 
 FROM registry.cloudogu.com/official/base:3.20.2-1 as doguctlBinary
 
-FROM gotenberg/gotenberg:8.8.0
+FROM gotenberg/gotenberg:8.12.0
 
 USER root
 RUN apt-get -y update && apt-get -y dist-upgrade && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 USER gotenberg
 
 LABEL NAME="official/gotenberg" \
-      VERSION="8.8.0-3" \
+      VERSION="8.12.0-1" \
       maintainer="SCM Team <scm-team@cloudogu.com>"
 
 COPY resources /
