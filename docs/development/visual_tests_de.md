@@ -18,7 +18,7 @@ Die Installation des Dogus kann wie gewohnt, z.B. mittels `cesapp build` + `cesa
 
 ## 3. Einrichtung Gotenberg in SCM-Manager
 
-Für die Aktivierung der Gotenberg Integration im SCM-Manager, ist eine Konfiguration im SCMM notwendig.
+Für die Aktivierung der Gotenberg Integration im SCM-Manager, ist eine Änderung der Konfiguration notwendig.
 Unter [Administration -> Settings -> Gotenberg](https://192.168.56.2/scm/admin/settings/gotenberg), muss folgender Wert konfiguriert werden: `http://gotenberg:3000`
 
 ## 4. Verprobung Word-Dokument
