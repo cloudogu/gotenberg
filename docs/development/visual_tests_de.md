@@ -11,6 +11,7 @@ Es muss sichergestellt werden, dass die folgenden Dogus installiert sind:
 - `official/cas`
 - `official/nginx`
 - `official/postfix`
+- `official/usermgt`
 
 ## 2. Installation Gotenberg Dogu
 
