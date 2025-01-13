@@ -29,6 +29,14 @@ node('vagrant') {
         stage('Lint') {
             lintDockerfile()
             shellCheck("resources/startup.sh")
+
+            if (env.CHANGE_TARGET) {
+                echo 'This is a pull request; checking changelog...'
+                String newChanges = changelog.changesForVersion('Unreleased')
+                if (!newChanges || newChanges.allWhitespace) {
+                    unstable('CHANGELOG.md should contain new change entries in the `[Unreleased]` section but none were found.')
+                }
+            }
         }
 
         try {
