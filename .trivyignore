@@ -4,6 +4,6 @@
 # See: https://github.com/madler/zlib/pull/843#issuecomment-2130408505
 CVE-2023-45853
 
-# This CVE is contained in the upstream debian:12-slim base image.
+# This wget CVE is contained in the upstream debian:12-slim base image.
 # In this Dogu, all args to wget are static and not modifiable by the user.
 CVE-2024-38428
