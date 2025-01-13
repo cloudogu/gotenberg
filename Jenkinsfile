@@ -37,6 +37,9 @@ node('vagrant') {
                     unstable('CHANGELOG.md should contain new change entries in the `[Unreleased]` section but none were found.')
                 }
             }
+
+            Markdown markdown = new Markdown(this)
+            markdown.check()
         }
 
         try {
