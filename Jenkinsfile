@@ -12,7 +12,8 @@ node('vagrant') {
     GitFlow gitflow = new GitFlow(this, git)
     GitHub github = new GitHub(this, git)
     Changelog changelog = new Changelog(this)
-    timestamps{
+
+    timestamps {
         properties([
                 // Keep only the last x builds to preserve space
                 buildDiscarder(logRotator(numToKeepStr: '10')),
@@ -55,7 +56,14 @@ node('vagrant') {
             stage('Build') {
                 ecoSystem.build("/dogu")
             }
-
+            stage('Trivy scan') {
+                ecoSystem.copyDoguImageToJenkinsWorker("/dogu")
+                Trivy trivy = new Trivy(this)
+                trivy.scanDogu(".", params.TrivySeverityLevels, params.TrivyStrategy)
+                trivy.saveFormattedTrivyReport(TrivyScanFormat.TABLE)
+                trivy.saveFormattedTrivyReport(TrivyScanFormat.JSON)
+                trivy.saveFormattedTrivyReport(TrivyScanFormat.HTML)
+            }
             stage('Verify') {
                 ecoSystem.verify("/dogu")
             }
@@ -71,7 +79,7 @@ node('vagrant') {
                     ecoSystem.push("/dogu")
                 }
 
-                stage ('Add Github-Release'){
+                stage ('Add Github-Release') {
                     github.createReleaseWithChangelog(releaseVersion, changelog, productionReleaseBranch)
                 }
             }
