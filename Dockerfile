@@ -1,13 +1,15 @@
 # keep variables beyond the single build stages, see https://stackoverflow.com/a/53682110/12529534
 
-FROM registry.cloudogu.com/official/base:3.20.2-1 as doguctlBinary
+FROM registry.cloudogu.com/official/base:3.21.0-1 as doguctlBinary
 
-FROM gotenberg/gotenberg:8.12.0
+FROM gotenberg/gotenberg:8.15.3
 
 USER root
+# hadolint ignore=DL3005
 RUN apt-get -y update && apt-get -y dist-upgrade && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 USER gotenberg
 
+# hadolint ignore=DL3048
 LABEL NAME="official/gotenberg" \
       VERSION="8.12.0-1" \
       maintainer="SCM Team <scm-team@cloudogu.com>"
