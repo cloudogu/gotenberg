@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v8.15.3-1] - 2025-01-16
+- [#14] Upgrade Gotenberg to 8.15.3
+- [#12] Update Makefiles to 9.5.0
+- Upgrade ces-build-lib to 4.0.1
+- Upgrade dogu-build-lib to 3.0.0
+
 ## [v8.12.0-1] - 2024-10-22
 ### Changed
 - Upgrade Gotenberg to 8.12.0
