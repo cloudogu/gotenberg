@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- [#16] Add missing dogu-config in dogu.json
 
 ## [v8.15.3-1] - 2025-01-16
 - [#14] Upgrade Gotenberg to 8.15.3
