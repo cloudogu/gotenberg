@@ -17,6 +17,6 @@ echo "                       'V/(/////////////////////////////V'      "
 
 
 
-ETCD_LOG_LEVEL=$(doguctl config "logging/root")
+logLevel=$(doguctl config "logging/root")
 
-exec gotenberg --log-level="${ETCD_LOG_LEVEL}"
+exec gotenberg --log-level="$(echo "${logLevel}" | tr '[:upper:]' '[:lower:]')"
