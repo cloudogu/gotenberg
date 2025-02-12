@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v8.15.3-2] - 2025-02-12
+### Added
+- [#16] Add missing dogu-config in dogu.json
+
 ## [v8.15.3-1] - 2025-01-16
 - [#14] Upgrade Gotenberg to 8.15.3
 - [#12] Update Makefiles to 9.5.0
