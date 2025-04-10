@@ -50,6 +50,10 @@ node('vagrant') {
 
         try {
             stage('Provision') {
+                // change namespace to prerelease_namespace if in develop-branch
+                if (gitflow.isPreReleaseBranch()) {
+                    sh "make prerelease_namespace"
+                }
                 ecoSystem.provision("/dogu")
             }
 
@@ -73,7 +77,12 @@ node('vagrant') {
                 ecoSystem.verify("/dogu")
             }
 
-            if (gitflow.isReleaseBranch()) {
+            if (gitflow.isPreReleaseBranch()) {
+                // push to registry in prerelease_namespace
+                stage('Push Prerelease Dogu to registry') {
+                    ecoSystem.pushPreRelease("/dogu")
+                }
+            } else if (gitflow.isReleaseBranch()) {
                 String releaseVersion = git.getSimpleBranchName()
 
                 stage('Finish Release') {
