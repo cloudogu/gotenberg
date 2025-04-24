@@ -1,6 +1,6 @@
 {
   "Name": "official/gotenberg",
-  "Version": "8.18.0-1",
+  "Version": "8.18.0-2",
   "DisplayName": "Gotenberg",
   "Description": "A Docker-powered stateless API for PDF files.",
   "Url": "https://gotenberg.dev/",
@@ -24,7 +24,7 @@
       "Validation": {
         "Type": "BINARY_MEASUREMENT"
       },
-      "Default": "105m"
+      "Default": "200m"
     },
     {
       "Name": "container_config/memory_request",
@@ -33,7 +33,7 @@
       "Validation": {
         "Type": "BINARY_MEASUREMENT"
       },
-      "Default": "105m"
+      "Default": "200m"
     },
     {
       "Name": "container_config/storage_limit",
