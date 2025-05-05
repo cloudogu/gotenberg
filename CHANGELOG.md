@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v8.20.1-1] - 2025-05-05
+### Changed
+- [#22] Update Gotenberg to 8.20.1
+
 ## [v8.18.0-2] - 2025-04-24
 ### Changed
 - [#20] Set sensible resource requests and limits
