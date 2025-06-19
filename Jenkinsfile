@@ -5,9 +5,7 @@
   'dogu-build-lib'
 ]) _
 
-def pipe = new com.cloudogu.sos.pipebuildlib.DoguPipe(this, [doguName: 'gotenberg',
-    shellScripts: './resources/startup.sh', checkMarkdown: true,
-])
+def pipe = new com.cloudogu.sos.pipebuildlib.DoguPipe(this, [doguName: 'gotenberg', shellScripts: './resources/startup.sh'])
 
 pipe.setBuildProperties()
 pipe.addDefaultStages()
