@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v8.21.1-1] - 2025-06-19
+### Changed
+- [#26] Update Gotenberg to v8.21.1
+- [#26] Update base image to v3.22.0-2
+- [#26] Added pipe-build-lib
+### Security
+- [#26] Added to .trivyignore [CVE-2025-49794](https://nvd.nist.gov/vuln/detail/CVE-2025-49794)
+- [#26] Added to .trivyignore [CVE-2025-49796](https://nvd.nist.gov/vuln/detail/CVE-2025-49796)
+
 ## [v8.21.0-1] - 2025-05-23
 ### Changed
 - [#24] Update Gotenberg to 8.21.0

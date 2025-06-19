@@ -7,3 +7,9 @@ CVE-2023-45853
 # This wget CVE is contained in the upstream debian:12-slim base image.
 # In this Dogu, all args to wget are static and not modifiable by the user.
 CVE-2024-38428
+# The following libxml2 CVEs are related to low-level XML parsing bugs.
+# The Dogu (gotenberg) does not directly parse user-provided XML.
+# Uploaded documents are processed via LibreOffice, which internally uses libxml2.
+# No direct XML attack surface is exposed to end users.
+CVE-2025-49794
+CVE-2025-49796
