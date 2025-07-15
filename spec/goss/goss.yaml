@@ -5,3 +5,9 @@ port:
   tcp6:3000:
     listening: true
     ip: ['::']
+file:
+  /var/ces:
+    filetype: directory
+    exists: true
+    owner: gotenberg
+    group: gotenberg

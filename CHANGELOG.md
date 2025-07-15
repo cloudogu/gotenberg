@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v8.21.1-2] - 2025-07-15
+### Fixed
+- [#28] Missing permissions to `/var/ces` would cause dogu to crash-loop in multinode
+
 ## [v8.21.1-1] - 2025-06-19
 ### Changed
 - [#26] Update Gotenberg to v8.21.1
