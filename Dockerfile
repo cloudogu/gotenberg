@@ -7,6 +7,7 @@ FROM gotenberg/gotenberg:8.21.1
 USER root
 # hadolint ignore=DL3005
 RUN apt-get -y update && apt-get -y dist-upgrade && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+    mkdir -p /var/ces && \
     chown -R gotenberg:gotenberg /var/ces
 USER gotenberg
 
@@ -18,7 +19,7 @@ LABEL NAME="official/gotenberg" \
 COPY resources /
 
 # unpack and install doguctl
-COPY --from=doguctlbinary /usr/bin/doguctl /usr/bin/
+COPY --from=doguctlbinary /usr/local/bin/doguctl /usr/local/bin/
 
 EXPOSE 3000
 
