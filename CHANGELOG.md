@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- [#30] Update base image to v3.22.0-4
+- [#30] Update Makefiles to 10.2.0
+### Security
+- [#30] Update libsqlite3 [CVE-2025-6965](https://nvd.nist.gov/vuln/detail/CVE-2025-6965)
 
 ## [v8.21.1-2] - 2025-07-15
 ### Fixed
