@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v8.22.0-1] - 2025-08-20
+### Changed
+- [#32] Update Gotenberg to v8.22.0
+- [#32] Update Makefiles to v10.2.0
+### Security
+- [#32] Fixed [CVE-2023-45853](https://nvd.nist.gov/vuln/detail/CVE-2023-45853)
+- [#32] Fixed [CVE-2024-38428](https://nvd.nist.gov/vuln/detail/CVE-2024-38428)
+- [#32] Fixed [CVE-2025-6965](https://nvd.nist.gov/vuln/detail/CVE-2025-6965)
+- [#32] Fixed [CVE-2025-49794](https://nvd.nist.gov/vuln/detail/CVE-2025-49794)
+- [#32] Fixed [CVE-2025-49796](https://nvd.nist.gov/vuln/detail/CVE-2025-49796)
+
 ## [v8.21.1-2] - 2025-07-15
 ### Fixed
 - [#28] Missing permissions to `/var/ces` would cause dogu to crash-loop in multinode
