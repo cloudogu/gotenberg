@@ -1,6 +1,6 @@
 # keep variables beyond the single build stages, see https://stackoverflow.com/a/53682110/12529534
 
-FROM registry.cloudogu.com/official/base:3.22.0-3 AS doguctlbinary
+FROM registry.cloudogu.com/official/base:3.22.0-4 AS doguctlbinary
 
 FROM gotenberg/gotenberg:8.21.1
 
