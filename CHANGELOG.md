@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v8.23.0-2] - 2025-09-19
+### Security
+- [#34] Fixed [CVE-2025-54874](https://avd.aquasec.com/nvd/2025/cve-2025-54874)
+- [#34] Fixed [CVE-2025-58050](https://avd.aquasec.com/nvd/2025/cve-2025-58050)
+
 ## [v8.23.0-1] - 2025-09-04
 ### Changed
 - [#34] Update Gotenberg to v8.23.0
