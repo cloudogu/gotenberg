@@ -1,0 +1,5 @@
+# Python 3.13 is present due to the Debian base image but not used at runtime.
+# Gotenberg is a Go application and no Python processes are started.
+# The vulnerability affects Python's http.client module and is not exploitable
+# in this container.
+CVE-2025-13836
