@@ -1,6 +1,6 @@
 {
   "Name": "official/gotenberg",
-  "Version": "8.25.1-1",
+  "Version": "8.25.1-2",
   "DisplayName": "Gotenberg",
   "Description": "A Docker-powered stateless API for PDF files.",
   "Url": "https://gotenberg.dev/",
