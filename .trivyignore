@@ -7,3 +7,8 @@ CVE-2023-45853
 # This wget CVE is contained in the upstream debian:12-slim base image.
 # In this Dogu, all args to wget are static and not modifiable by the user.
 CVE-2024-38428
+# Python 3.13 is present due to the Debian base image but not used at runtime.
+# Gotenberg is a Go application and no Python processes are started.
+# The vulnerability affects Python's http.client module and is not exploitable
+# in this container.
+CVE-2025-13836
