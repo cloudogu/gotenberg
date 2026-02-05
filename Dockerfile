@@ -1,8 +1,8 @@
 # keep variables beyond the single build stages, see https://stackoverflow.com/a/53682110/12529534
 
-FROM registry.cloudogu.com/official/base:3.23.0-1 AS doguctlbinary
+FROM registry.cloudogu.com/official/base:3.23.3-2 AS doguctlbinary
 
-FROM gotenberg/gotenberg:8.25.1
+FROM gotenberg/gotenberg:8.26.0
 
 USER root
 # hadolint ignore=DL3005
@@ -13,7 +13,7 @@ USER gotenberg
 
 # hadolint ignore=DL3048
 LABEL NAME="official/gotenberg" \
-      VERSION="8.25.1-3" \
+      VERSION="8.26.0-0" \
       maintainer="SCM Team <scm-team@cloudogu.com>"
 
 COPY resources /
