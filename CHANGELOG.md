@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Security
+- [#50] fix CVE-2025-68121
+  - This is done by copying a fixed doguctl binary from base image v3.23.3-4.
 
 ## [v8.25.1-3] - 2026-01-30
 
