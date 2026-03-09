@@ -6,9 +6,12 @@ FROM gotenberg/gotenberg:8.27.0
 
 USER root
 # hadolint ignore=DL3005
-RUN apt-get -y update && apt-get -y dist-upgrade && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-    mkdir -p /var/ces && \
-    chown -R gotenberg:gotenberg /var/ces
+RUN apt-get -y update \
+ && apt-get -y dist-upgrade \
+ && apt-get -y clean \
+ && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+ && mkdir -p /var/ces \
+ && chown -R gotenberg:gotenberg /var/ces
 USER gotenberg
 
 # hadolint ignore=DL3048
