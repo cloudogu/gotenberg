@@ -8,6 +8,7 @@ USER root
 # hadolint ignore=DL3005
 RUN apt-get -y update \
  && apt-get -y dist-upgrade \
+ && apt-get -y clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
  && mkdir -p /var/ces \
  && chown -R gotenberg:gotenberg /var/ces
