@@ -5,17 +5,25 @@ In dieser Anleitung wird erklärt, wie die manuellen Tests für das Gotenberg Do
 ## 1. Dogu Abhängigkeiten
 
 Eine Auswahl von Dogus ist notwendig, um die Tests durchzuführen.
-Es muss sichergestellt werden, dass die folgenden Dogus installiert sind:
-
-- `official/scm`
-- `official/cas`
-- `official/nginx`
-- `official/postfix`
-- `official/usermgt`
+Neben den Systemdogus `official/cas` und `official/postfix` muss der SCM-Manager `official/scm` verfügbar sein.
 
 ## 2. Installation Gotenberg Dogu
 
-Die Installation des Dogus kann wie gewohnt, z.B. mittels `cesapp build` + `cesapp start`, durchgeführt werden.
+Die Installation des SCM-Managers im MN-LOP geschieht mittels K8s Manifest:
+```sh
+kubectl apply -f - <<EOF
+apiVersion: k8s.cloudogu.com/v2
+kind: Dogu
+metadata:
+  name: scm
+  namespace: ecosystem
+  labels:
+    app: ces
+spec:
+  name: official/scm
+  version: 3.11.7-1
+EOF
+```
 
 ## 3. Einrichtung Gotenberg in SCM-Manager
 
