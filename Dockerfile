@@ -2,7 +2,7 @@
 
 FROM registry.cloudogu.com/official/base:3.23.3-6 AS doguctlbinary
 
-FROM gotenberg/gotenberg:8.28.0
+FROM gotenberg/gotenberg:8.29.1-libreoffice
 
 USER root
 # hadolint ignore=DL3005

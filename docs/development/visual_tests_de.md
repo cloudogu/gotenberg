@@ -22,6 +22,8 @@ metadata:
 spec:
   name: official/scm
   version: 3.11.7-1
+  additionalIngressAnnotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "1G"
 EOF
 ```
 

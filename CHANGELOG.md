@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- [#59] Update Gotenberg to v8.29.1
+- [#59] Use Gotenberg's libreoffice-only image
+### Security
+- [#59] Vulnerability fixed: [CVE-2006-10003](https://avd.aquasec.com/nvd/2006/cve-2006-10003/)
 
 ## [v8.28.0-1] - 2026-03-25
 ### Changed
