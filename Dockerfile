@@ -1,10 +1,10 @@
-# keep variables beyond the single build stages, see https://stackoverflow.com/a/53682110/12529534
-
 FROM registry.cloudogu.com/official/base:3.23.4-2 AS doguctlbinary
 
 FROM gotenberg/gotenberg:8.33.0-libreoffice
 
 USER root
+
+RUN mkdir -p /var/ces && chown -R gotenberg:gotenberg /var/ces
 
 RUN echo "deb http://deb.debian.org/debian trixie contrib non-free" > /etc/apt/sources.list.d/contrib.list \
  && echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | debconf-set-selections \
@@ -18,9 +18,8 @@ RUN echo "deb http://deb.debian.org/debian trixie contrib non-free" > /etc/apt/s
 # hadolint ignore=DL3005
 RUN apt-get -y dist-upgrade \
  && apt-get -y clean \
- && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
- && mkdir -p /var/ces \
- && chown -R gotenberg:gotenberg /var/ces
+ && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 USER gotenberg
 
 # hadolint ignore=DL3048
