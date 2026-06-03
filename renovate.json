@@ -5,5 +5,20 @@
   ],
   "ignorePaths": [
     "/build/**"
+  ],
+  "configMigration": true,
+  "minimumReleaseAge": "7 days",
+  "semanticCommits": "enabled",
+  "packageRules": [
+    {
+      "description": "No delay for self-made deps",
+      "matchDatasources": [
+        "github-tags"
+      ],
+      "matchDepNames": [
+        "cloudogu/**"
+      ],
+      "minimumReleaseAge": "0 days"
+    }
   ]
 }
