@@ -6,13 +6,8 @@ USER root
 
 RUN mkdir -p /var/ces && chown -R gotenberg:gotenberg /var/ces
 
-RUN echo "deb http://deb.debian.org/debian trixie contrib non-free" > /etc/apt/sources.list.d/contrib.list \
- && echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | debconf-set-selections \
- && apt-get update \
- && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-         ca-certificates \
-         wget \
-         ttf-mscorefonts-installer \
+# hadolint ignore=DL3005
+RUN apt-get update \
  && apt-get -y dist-upgrade \
  && apt-get -y clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
@@ -26,7 +21,6 @@ LABEL NAME="official/gotenberg" \
 
 COPY resources /
 
-# unpack and install doguctl
 COPY --from=doguctlbinary /usr/local/bin/doguctl /usr/local/bin/
 
 EXPOSE 3000
