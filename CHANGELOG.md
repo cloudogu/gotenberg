@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- [#72] Update Gotenberg to v8.34.0
+- [#72] Update base-image to v3.24.0-1
+- [#72] Update Makefiles to v10.9.1
 
 ## [v8.33.0-1] - 2026-06-03
 ### Changed
