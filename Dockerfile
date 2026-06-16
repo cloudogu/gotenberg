@@ -1,6 +1,6 @@
-FROM registry.cloudogu.com/official/base:3.23.4-2 AS doguctlbinary
+FROM registry.cloudogu.com/official/base:3.24.0-1 AS doguctlbinary
 
-FROM gotenberg/gotenberg:8.33.0-libreoffice
+FROM gotenberg/gotenberg:8.34.0-libreoffice
 
 USER root
 
@@ -16,7 +16,7 @@ USER gotenberg
 
 # hadolint ignore=DL3048
 LABEL NAME="official/gotenberg" \
-      VERSION="8.33.0-1" \
+      VERSION="8.34.0-1" \
       maintainer="SCM Team <scm-team@cloudogu.com>"
 
 COPY resources /
