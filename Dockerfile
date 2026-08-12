@@ -1,4 +1,4 @@
-FROM registry.cloudogu.com/official/base:3.24.0-1 AS doguctlbinary
+FROM registry.cloudogu.com/official/base:3.24.1-2 AS doguctlbinary
 
 FROM gotenberg/gotenberg:8.34.0-libreoffice
 
