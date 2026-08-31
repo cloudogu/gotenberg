@@ -16,7 +16,7 @@ USER gotenberg
 
 # hadolint ignore=DL3048
 LABEL NAME="official/gotenberg" \
-      VERSION="8.36.0-1" \
+      VERSION="8.36.0-0" \
       maintainer="SCM Team <scm-team@cloudogu.com>"
 
 COPY resources /
