@@ -24,7 +24,7 @@
       "Validation": {
         "Type": "BINARY_MEASUREMENT"
       },
-      "Default": "200m"
+      "Default": "512m"
     },
     {
       "Name": "container_config/memory_request",
