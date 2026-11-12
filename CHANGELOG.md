@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v9.4.0-1] - 2026-11-12
+### Changed
+- [#89] Update Gotenberg to v9.4.0
+- [#89] Raise default memory limit to 512m
+
 ## [v8.40.0-1] - 2026-11-11
 ### Changed
 - [#87] Update Gotenberg to v8.40.0
