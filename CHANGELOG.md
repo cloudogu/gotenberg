@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v9.7.0-1] - 2026-11-18
+### Changed
+- [#94] Update Gotenberg to v9.7.0
+- [#94] Update base image to v3.24.4-1
+
 ## [v9.6.0-1] - 2026-11-17
 ### Changed
 - [#92] Update Gotenberg to v9.6.0
