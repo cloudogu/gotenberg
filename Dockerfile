@@ -1,6 +1,6 @@
 FROM registry.cloudogu.com/official/base:3.24.4-1 AS doguctlbinary
 
-FROM gotenberg/gotenberg:9.7.0-libreoffice
+FROM gotenberg/gotenberg:9.9.1-libreoffice
 
 USER root
 
